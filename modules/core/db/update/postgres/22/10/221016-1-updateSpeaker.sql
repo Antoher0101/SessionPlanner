@@ -1,0 +1,1 @@
+drop index IDX_PLANNER_SPEAKER_LAST_NAME ;
