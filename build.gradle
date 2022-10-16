@@ -1,4 +1,3 @@
-
 buildscript {
     ext.cubaVersion = '7.2.19'
     repositories {
@@ -9,7 +8,7 @@ buildscript {
                 password(rootProject.hasProperty('repoPass') ? rootProject['repoPass'] : 'cuba123')
             }
         }
-        
+
     }
     dependencies {
         classpath "com.haulmont.gradle:cuba-plugin:$cubaVersion"
@@ -36,6 +35,7 @@ cuba {
 
 dependencies {
     appComponent("com.haulmont.cuba:cuba-global:$cubaVersion")
+    appComponent('com.haulmont.addon.helium:helium-global:0.4.0')
 }
 
 def postgres = 'org.postgresql:postgresql:42.2.9'
