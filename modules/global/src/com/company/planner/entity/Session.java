@@ -18,12 +18,12 @@ public class Session extends StandardEntity {
     @Column(name = "TOPIC", nullable = false)
     private String topic;
 
-    @Column(name = "DESCRIPTION")
-    private String description;
-
     @NotNull
     @Column(name = "START_DATE", nullable = false)
     private LocalDateTime startDate;
+
+    @Column(name = "DESCRIPTION")
+    private String description;
 
     @NotNull
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
