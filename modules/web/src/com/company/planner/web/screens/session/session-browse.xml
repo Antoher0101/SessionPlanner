@@ -20,6 +20,11 @@
     </data>
     <dialogMode height="600"
                 width="800"/>
+    <facets>
+        <editorScreen id="sessionEditScreen" container="sessionsDc" editMode="EDIT"
+                      entityClass="com.company.planner.entity.Session" openMode="DIALOG"
+                      screenClass="com.company.planner.web.screens.session.SessionEdit"/>
+    </facets>
     <layout expand="sessionsTabSheet"
             spacing="true">
         <filter id="filter"
